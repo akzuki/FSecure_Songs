@@ -5,7 +5,7 @@ This app is built with MVVM architectural pattern.
 
 ## Screenshots
 
-![alt tag](http://i.imgur.com/GeQIMai.jpg)
+![alt tag](https://github.com/akzuki/FSecure_Songs/blob/master/Screenshots/screenshot.gif)
 
 ## Descriptions
 
@@ -33,9 +33,9 @@ $ open "FSecure_Songs.xcworkspace"
 4) Compile and run the app in your devices
 
 ## Code style
-```
+
 This project is following the [GitHub Swift Styleguide](https://github.com/github/swift-style-guide)
-```
+
 ## Project Structure
 ```
 FSecure_Songs
@@ -67,6 +67,5 @@ FSecure_Songs
 - [EZLoadingActivity](https://github.com/goktugyil/EZLoadingActivity)
 
 ## Backend
-```
+
 The backend is using NodeJS and PostgresqlDB. 
-```
