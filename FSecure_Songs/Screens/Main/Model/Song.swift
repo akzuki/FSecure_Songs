@@ -9,17 +9,17 @@
 import Foundation
 import ObjectMapper
 
-class Song: Mappable {
+struct Song: Mappable {
     var songName: String!
     var artistName: String!
     var songThumbnailUrl: String!
     var songLyrics: String!
     
-    required init?(_ map: Map){
+    init?(_ map: Map){
         
     }
     
-    func mapping(map: Map) {
+    mutating func mapping(map: Map) {
         songName <- map["song_name"]
         artistName <- map["artist_name"]
         songThumbnailUrl <- map["song_thumbnail_url"]
