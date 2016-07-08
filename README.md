@@ -20,17 +20,13 @@ This app is built with MVVM architectural pattern.
 ```bash
 $ git clone https://github.com/akzuki/FSecure_Songs.git
 ```
-2) Install pods
 
-```bash
-$ pod install
-```
-3) Open the workspace in Xcode
+2) Open the workspace in Xcode
 
 ```bash
 $ open "FSecure_Songs.xcworkspace"
 ```
-4) Compile and run the app in your devices
+3) Compile and run the app in your devices
 
 ## Code style
 
