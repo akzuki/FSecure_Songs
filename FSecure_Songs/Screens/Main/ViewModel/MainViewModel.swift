@@ -22,7 +22,7 @@ class MainViewModel {
     
     //Fetch data from server to viewModel
     func getSongs(completionHandler: (success: Bool) -> Void) {
-        WebServices.sharedInstance.getSongs(mood, page: page) { (result) in
+        WebServices.sharedInstance.getSongs(mood, page: page) { [unowned self] (result) in
             switch result {
             case .Success(let songs):
                 self.songs = songs
@@ -36,7 +36,7 @@ class MainViewModel {
     
     //Load more songs
     func loadMoreSongs(completionHandler: () -> Void) {
-        WebServices.sharedInstance.getSongs(mood, page: page) { (result) in
+        WebServices.sharedInstance.getSongs(mood, page: page) { [unowned self] (result) in
             switch result {
             case .Success(let songs):
                 self.songs.appendContentsOf(songs)
