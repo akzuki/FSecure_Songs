@@ -11,12 +11,13 @@ import Foundation
 class MainViewModel {
     //MARK: Properties
     private var mood: Mood
-    private var songs: [Song] = []
+    private var songs: [Song]
     var page: Int
     
     //MARK: Init method
     init(withMood mood: Mood) {
         self.mood = mood
+        songs = []
         page = 0
     }
     

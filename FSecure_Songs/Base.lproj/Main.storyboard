@@ -10,7 +10,7 @@
         <scene sceneID="4hk-0B-xu8">
             <objects>
                 <tableViewController id="Mdg-q7-kW9" customClass="MainTableViewController" customModule="FSecure_Songs" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="337.5" sectionHeaderHeight="28" sectionFooterHeight="28" id="25F-6f-7U8">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" id="25F-6f-7U8">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="0.8176993534" colorSpace="calibratedWhite"/>
