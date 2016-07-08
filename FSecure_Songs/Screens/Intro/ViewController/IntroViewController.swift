@@ -21,7 +21,7 @@ class IntroViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.emojiRateView.rateValueChangeCallback = {(rateValue: Float) -> Void in
+        emojiRateView.rateValueChangeCallback = {(rateValue: Float) -> Void in
             self.introViewModel.rateValue = rateValue
             self.moodLabel.text = self.introViewModel.mood.rawValue
         }
