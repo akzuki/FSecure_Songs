@@ -1,0 +1,6 @@
+framework module Pods_FSecure_Songs {
+  umbrella header "Pods-FSecure_Songs-umbrella.h"
+
+  export *
+  module * { export * }
+}
