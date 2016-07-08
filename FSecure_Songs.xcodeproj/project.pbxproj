@@ -114,6 +114,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		93A08E971D2F2DE200FBF755 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				93C77F801D2C49E500AF6790 /* Main.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
 		93C77F701D2C49E500AF6790 = {
 			isa = PBXGroup;
 			children = (
@@ -143,7 +151,7 @@
 				93C77FC21D2D39C000AF6790 /* Protocols */,
 				93E5347E1D2E91B600DC3F5A /* Network */,
 				93C77FAA1D2C500900AF6790 /* Screens */,
-				93C77F801D2C49E500AF6790 /* Main.storyboard */,
+				93A08E971D2F2DE200FBF755 /* Storyboard */,
 				93C77F831D2C49E500AF6790 /* Assets.xcassets */,
 				93C77F851D2C49E500AF6790 /* LaunchScreen.storyboard */,
 				93C77F881D2C49E500AF6790 /* Info.plist */,
