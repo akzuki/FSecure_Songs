@@ -58,7 +58,7 @@ class MainViewModel {
     }
     
     func itemAtIndexPath(indexPath: NSIndexPath) -> Song {
-        return songs[indexPath.item]
+        return songs[indexPath.row]
     }
     
 }
