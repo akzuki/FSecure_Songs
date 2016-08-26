@@ -8,10 +8,10 @@
 
 import Foundation
 
-class MainViewModel {
+struct MainViewModel {
     //MARK: Properties
     private var mood: Mood
-    private var songs: [Song] = []
+    var songs: [Song] = []
     var page: Int
     
     //MARK: Init method
@@ -21,11 +21,12 @@ class MainViewModel {
     }
     
     //Fetch data from server to viewModel
-    func getSongs(completionHandler: (success: Bool) -> Void) {
-        WebServices.sharedInstance.getSongs(mood, page: page) { [unowned self] (result) in
+    mutating func getSongs(completionHandler: (success: Bool) -> Void) {
+        WebServices.sharedInstance.getSongs(mood, page: page) { (result) in
             switch result {
             case .Success(let songs):
                 self.songs = songs
+                //DMSTRUCT
                 completionHandler(success: true)
             case .Failure(let error):
                 print("Error when loading songs \(error)")
@@ -35,8 +36,8 @@ class MainViewModel {
     }
     
     //Load more songs
-    func loadMoreSongs(completionHandler: () -> Void) {
-        WebServices.sharedInstance.getSongs(mood, page: page) { [unowned self] (result) in
+    mutating func loadMoreSongs(completionHandler: () -> Void) {
+        WebServices.sharedInstance.getSongs(mood, page: page) {(result) in
             switch result {
             case .Success(let songs):
                 self.songs.appendContentsOf(songs)

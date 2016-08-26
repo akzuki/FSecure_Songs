@@ -21,6 +21,10 @@ class MainTableViewController: UITableViewController {
         EZLoadingActivity.show("Loading songs", disableUI: true)
         //Get songs
         mainViewModel.getSongs({ (success: Bool) in
+            //DMSTRUCT
+            print(self.mainViewModel.songs)
+            //cai nay in ra la empty []
+            
             dispatch_async(dispatch_get_main_queue(), {
                 EZLoadingActivity.hide(success: success, animated: true)
                 self.tableView.reloadData()
